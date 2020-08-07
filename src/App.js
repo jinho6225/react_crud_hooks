@@ -7,11 +7,11 @@ import EditUserForm from  './forms/EditUserForm.jsx'
 const App = () => {
   const [users, setUsers] = useState(userList)
   
-    const [editing, setEditing] = useState(false);
-  
-    const initialUser = {id: null, name: '', username: ''};
-  
-    const [currentUser, setCurrentUser] = useState(initialUser)
+  const [editing, setEditing] = useState(false);
+
+  const initialUser = {id: null, name: '', username: ''};
+
+  const [currentUser, setCurrentUser] = useState(initialUser)
 
   const addUser = user => {
     user.id = users.length + 1;
